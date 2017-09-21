@@ -1,8 +1,8 @@
 body
 {
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.5em;
 
     min-height: 100%;
     margin: 0;
@@ -11,7 +11,14 @@ body
     background-color: #fff;
 }
 
-/*primary navigation*/
+
+
+
+
+/* -----------------------------------
+   #Primary navigation
+-----------------------------------*/
+
 
 
 .bd-primary-nav-container
@@ -52,10 +59,11 @@ body
 
 .bd-primary-nav-item:hover
 {
+    text-decoration: none;
+
     color: #4a4a4a;
     background-color: #fff7e8;
 }
-
 
 @media screen and (max-width: 767px)
 {
@@ -67,7 +75,6 @@ body
     }
 }
 
-
 @media screen and (max-width: 479px)
 {
     .bd-primary-nav-item
@@ -78,7 +85,14 @@ body
 }
 
 
-/*header for navigation*/
+
+
+
+/* -----------------------------------
+   #Header for primary navigation
+-----------------------------------*/
+
+
 
 .bd-header-wrapper
 {
@@ -100,15 +114,14 @@ body
     text-align: center;
 }
 
-
 .bd-header-title-top
 {
     font-family: 'Great Vibes', sans-serif;
     font-size: 60px;
+    font-weight: 600;
 
     color: #fff7e8;
 }
-
 
 @media screen and (max-width: 991px)
 {
@@ -133,14 +146,93 @@ body
     {
         padding: 20px 0;
     }
-
     .bd-header-title-top
     {
         font-size: 40px;
     }
-
     .bd-primary-nav-container
     {
         margin-top: 40px;
     }
+}
+
+
+
+
+
+/* -----------------------------------
+   #Footer
+-----------------------------------*/
+
+
+
+.bd-footer-top
+{
+    padding: 60px 5px 50px 5px;
+
+    text-align: center;
+
+    background: #474645;
+}
+
+.bd-footer-top-title
+{
+    font-family: 'Open Sans', 'Droid Serif','Lato', serif;
+    font-size: 18px;
+    line-height: 30px;
+
+    padding-bottom: 25px;
+
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #b3b3b3;
+}
+
+.bd-footer-bottom
+{
+    padding: 20px 0;
+
+    text-align: center;
+
+    border-top: 1px solid #55534e;
+    background: #3c3c3c;
+}
+
+.bd-footer-menu
+{
+    margin: 0;
+    padding: 0;
+}
+
+.bd-footer-menu li
+{
+    display: inline-block;
+}
+
+.bd-footer-menu li a
+{
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-right: 5px;
+    margin-left: 5px;
+
+    transition: color .3s ease;
+
+    color: #b3b3b3;
+}
+
+.bd-footer-menu li a:hover
+{
+    text-decoration: none;
+
+    color: white;
+}
+
+.bd-footer-top .bd-footer-btn
+{
+    display: inline-block;
 }

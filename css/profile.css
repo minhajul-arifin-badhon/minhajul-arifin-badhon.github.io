@@ -1,1 +1,139 @@
+.bd-section
+{
+    position: relative;
+}
 
+.bd-section-bg-left,
+.bd-section-bg-right
+{
+    position: absolute;
+
+    width: 50%;
+    height: 100%;
+}
+
+.bd-section-bg-right
+{
+    left: 50%;
+}
+
+.bd-section:nth-child(odd) .bd-section-bg-left,
+.bd-section:nth-child(odd) .bd-content-left
+{
+    background-color: #f8f8f8;
+}
+
+.bd-section:nth-child(even) .bd-section-bg-left,
+.bd-section:nth-child(even) .bd-content-left
+{
+    background-color: #fcfcfc;
+}
+
+.bd-section:nth-child(odd) .bd-section-bg-right,
+.bd-section:nth-child(odd) .bd-content-right
+{
+    background-color: #fcfcfc;
+}
+
+.bd-section:nth-child(even) .bd-section-bg-right,
+.bd-section:nth-child(even) .bd-content-right
+{
+    background-color: #fff;
+}
+
+.bd-content-left,
+.bd-content-right
+{
+    /*padding: 60px 70px 25px;*/
+    padding: 15px 70px 15px;
+}
+
+.bd-content-left
+{
+    text-align: right;
+}
+
+.bd-content-right
+{
+    text-align: left;
+}
+
+.bd-section-title
+{
+    font-family: 'Bitter', serif;
+    font-size: 22px;
+
+    color: #5d524c;
+}
+
+.bd-content-title
+{
+    font-family: 'Martel';
+    font-size: 16px;
+
+    margin-bottom: 4px;
+    /* color: #43484d; */
+    /* color: #434242; */
+
+    color: #5d524c;
+}
+
+.bd-content-left .bd-content-title
+{
+    font-family: 'Eczar', serif;
+
+    text-transform: uppercase;
+}
+
+.bd-content-subtitle
+{
+    /*font-family: 'Open Sans';*/
+    font-family: 'Droid Sans';
+    font-size: 15px;
+
+    margin-bottom: 15px;
+
+    color: #605e5e;
+    /* color: #7e7c7b; */
+    /* color: #2d4a5b; */
+}
+
+.bd-content-description
+{
+    font-family: 'Roboto', sans-serif;
+    /*opacity: .8;*/
+    font-size: 14px;
+    line-height: 1.6em;
+
+    letter-spacing: .5px;
+    /*color: #2d4a5b;*/
+    /*color: #434242;*/
+
+    color: #939393;
+}
+
+@media screen and (max-width: 991px)
+{
+    .bd-content-left
+    {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .bd-content-left,
+    .bd-content-right
+    {
+        padding: 15px 50px 15px;
+    }
+}
+
+@media screen and (max-width: 479px)
+{
+    .bd-content-left,
+    .bd-content-right
+    {
+        padding: 15px 30px 15px;
+    }
+}

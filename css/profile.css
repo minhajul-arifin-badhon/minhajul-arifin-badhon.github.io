@@ -112,11 +112,24 @@
     color: #939393;
 }
 
+@media screen and (max-width: 1366px)
+{
+    .bd-content-right
+    {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 991px)
 {
     .bd-content-left
     {
         text-align: left;
+    }
+
+    .bd-content-right
+    {
+        width: 100%;
     }
 }
 

@@ -1,0 +1,100 @@
+body {
+    position: absolute;
+    width: 100%;
+}
+
+
+/* -----------------------------------
+   #Article Index
+-----------------------------------*/
+
+
+
+.bd-navbar {
+    border: 0;
+    background-color: #474645;
+    position: absolute;
+    right: 5%;
+    width: 110px;
+    z-index: 999;
+}
+
+.bd-navbar-nav {
+    padding: 0;
+}
+
+.bd-navbar-nav .nav {
+    float: none;
+    margin: 0;
+}
+
+.bd-navbar-nav .nav > li {
+    display: block;
+    float: none;
+    height: 80px;
+}
+
+.bd-navbar-nav .nav > li a {
+    display: block;
+    height: 80px;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+
+    transition: color 0.3s ease;
+}
+
+.bd-navbar-nav .nav > li.active a,
+.bd-navbar-nav .nav > li.active a:focus,
+.bd-navbar-nav .nav > li.active a:hover {
+    background: #b1aa9d;
+    color: white;
+}
+
+
+.bd-navbar-nav .nav > li a:hover {
+    color: #999999;
+}
+
+
+.affix {
+    position: fixed;
+    top: 20px;
+}
+
+
+@media screen and (max-width: 1366px)
+{
+    .bd-navbar
+    {
+        right: 3%;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .bd-navbar
+    {
+        right: 0;
+        width: 100%;
+    }
+
+    .bd-navbar-nav .nav > li {
+        height: auto;
+    }
+
+    .bd-navbar-nav .nav > li a {
+        height: auto;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .affix {
+        position: fixed;
+        top: 0;
+    }
+}

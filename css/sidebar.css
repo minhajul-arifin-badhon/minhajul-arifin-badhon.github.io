@@ -1,5 +1,7 @@
-body {
+body
+{
     position: absolute;
+
     width: 100%;
 }
 
@@ -10,57 +12,71 @@ body {
 
 
 
-.bd-navbar {
+.bd-navbar
+{
+    position: absolute;
+    z-index: 999;
+    right: 5%;
+
+    width: 110px;
+
     border: 0;
     background-color: #474645;
-    position: absolute;
-    right: 5%;
-    width: 110px;
-    z-index: 999;
 }
 
-.bd-navbar-nav {
+.bd-navbar-nav
+{
     padding: 0;
 }
 
-.bd-navbar-nav .nav {
+.bd-navbar-nav .nav
+{
     float: none;
+
     margin: 0;
 }
 
-.bd-navbar-nav .nav > li {
+.bd-navbar-nav .nav > li
+{
     display: block;
     float: none;
+
     height: 80px;
 }
 
-.bd-navbar-nav .nav > li a {
-    display: block;
-    height: 80px;
-    text-align: center;
-    padding-top: 30px;
-    color: white;
-
-    font-size: 15px;
+.bd-navbar-nav .nav > li a
+{
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
 
-    transition: color 0.3s ease;
+    display: block;
+
+    height: 80px;
+    padding-top: 30px;
+
+    transition: color .3s ease;
+    text-align: center;
+
+    color: white;
 }
 
 .bd-navbar-nav .nav > li.active a,
 .bd-navbar-nav .nav > li.active a:focus,
-.bd-navbar-nav .nav > li.active a:hover {
-    background: #b1aa9d;
+.bd-navbar-nav .nav > li.active a:hover
+{
     color: white;
+    background: #b1aa9d;
 }
 
 
-.bd-navbar-nav .nav > li a:hover {
-    color: #999999;
+.bd-navbar-nav .nav > li a:hover
+{
+    color: #999;
 }
 
 
-.affix {
+.affix
+{
     position: fixed;
     top: 20px;
 }
@@ -71,6 +87,7 @@ body {
     .bd-navbar
     {
         right: 3%;
+
         width: 100px;
     }
 }
@@ -80,20 +97,25 @@ body {
     .bd-navbar
     {
         right: 0;
+
         width: 100%;
     }
 
-    .bd-navbar-nav .nav > li {
+    .bd-navbar-nav .nav > li
+    {
         height: auto;
     }
 
-    .bd-navbar-nav .nav > li a {
-        height: auto;
+    .bd-navbar-nav .nav > li a
+    {
         font-size: 14px;
+
+        height: auto;
         padding-top: 10px;
     }
 
-    .affix {
+    .affix
+    {
         position: fixed;
         top: 0;
     }

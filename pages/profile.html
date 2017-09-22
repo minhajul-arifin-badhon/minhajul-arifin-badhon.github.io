@@ -24,15 +24,16 @@
     <!-- <link rel="stylesheet" href="build/main.min.css"/> -->
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".scrollspy" data-offset="20">
 
     <header class="bd-header-wrapper">
         <div class="bd-header-container">
@@ -49,54 +50,82 @@
         </div>
     </header>
 
+    <nav class="navbar navbar-default bd-navbar scrollspy" id="bd-navbar-affix" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bd-navbar-nav-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse bd-navbar-nav-collapse bd-navbar-nav">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#education">Education</a></li>
+                <li><a href="#thesis">Thesis</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Honors &amp; Awards</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
     <main>
-        <section class="bd-section">
+        <section class="bd-section" id="education">
             <div class="bd-section-bg-left"></div>
             <div class="bd-section-bg-right"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-4 col-md-8 bd-content-right">
                         <br><br>
-                        <h2 class="bd-section-title">Academics</h2>
+                        <h2 class="bd-section-title">Education</h2>
                         <br>
-                        <!-- <p class="bd-content-subtitle">Web Application</p> -->
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-4 bd-content-left wow fadeInLeft">
-                        <h4 class="bd-content-title">May 2015 – May 2015</h4>
+                        <h4 class="bd-content-title">Bachelor of Science (BSc)</h4>
+                        <p class="bd-content-subtitle">2012 - 2015</p>
                     </div>
                     <div class="col-md-8 bd-content-right">
                         <div class="wow fadeInRight">
-                            <h4 class="bd-content-title">Bibliophilia</h4>
-                            <p class="bd-content-subtitle">Web Application</p>
-                            <p class="bd-content-description">A community where reviews, ratings, details are available on books of different genres and their authors. Members can also create their own book list and share. They can also create groups to share their thoughts and discussions
-                                on books and more.</p>
+                            <h4 class="bd-content-title">Military Institute of Science and Technology</h4>
+                            <p class="bd-content-subtitle">Computer Science and Engineering (CSE)</p>
+                            <p class="bd-content-description">CGPA: 3.79/4.00 (Final year GPA 3.98)</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 bd-content-left">
-                        <h4 class="bd-content-title">May 2015 – May 2015</h4>
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">Higher Secondary Certificate (HSC)</h4>
+                        <p class="bd-content-subtitle">2010 - 2011</p>
                     </div>
                     <div class="col-md-8 bd-content-right">
-                        <h4 class="bd-content-title">Bibliophilia</h4>
-                        <p class="bd-content-subtitle">Web Application</p>
-                        <p class="bd-content-description">A community where reviews, ratings, details are available on books of different genres and their authors. Members can also create their own book list and share. They can also create groups to share their thoughts and discussions
-                            on books and more.</p>
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Notre Dame College</h4>
+                            <p class="bd-content-subtitle">Science</p>
+                            <p class="bd-content-description">GPA: 5.00/5.00</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 bd-content-left">
-                        <h4 class="bd-content-title">May 2015 – May 2015</h4>
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">Secondary School Certificate (SSC)</h4>
+                        <p class="bd-content-subtitle">2004 - 2009</p>
                     </div>
                     <div class="col-md-8 bd-content-right">
-                        <h4 class="bd-content-title">Bibliophilia</h4>
-                        <p class="bd-content-subtitle">Web Application</p>
-                        <p class="bd-content-description">A community where reviews, ratings, details are available on books of different genres and their authors. Members can also create their own book list and share. They can also create groups to share their thoughts and discussions
-                            on books and more.</p>
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">SOS Hermann Gmeiner College</h4>
+                            <p class="bd-content-subtitle">Science</p>
+                            <p class="bd-content-description">GPA: 5.00/5.00</p>
+                        </div>
                     </div>
                 </div>
 
@@ -109,6 +138,468 @@
             </div>
         </section>
 
+        <section class="bd-section" id="thesis">
+            <div class="bd-section-bg-left"></div>
+            <div class="bd-section-bg-right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br><br>
+                        <h2 class="bd-section-title">Thesis</h2>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 2015</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Analysis of Big Data to study the pattern of students’ activities</h4>
+                            <p class="bd-content-subtitle">Supervisor: Fahim Hassan Khan, Assistant Professor, Department of CSE, MIST</p>
+                            <p class="bd-content-description">
+                                We analyzed the correlations of activity patterns among the students of different departments using unsupervised learning and developed a predictive model to give suggestion to students about which club will be more appropriate for them based on their
+                                interests and participations in different activities using supervised learning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bd-section" id="publications">
+            <div class="bd-section-bg-left"></div>
+            <div class="bd-section-bg-right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br><br>
+                        <h2 class="bd-section-title">Publications</h2>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 21, 2015</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Light following and obstacle avoiding robot using autonomous and android based manual controller</h4>
+                            <p class="bd-content-subtitle">2015 18th International Conference on Computer and Information Technology (ICCIT)</p>
+                            <p class="bd-content-description">
+                                In this work, we have presented a robot, which is compact, autonomous and fully functional. It is a proposed model which can be used in such an environment, which may be vulnerable and risky to human being. It has three types of functions. Those are light
+                                following, obstacle detection and controlling from an android device through bluetooth module. A mobile robot having a control unit integrating the processing and the main sensor functionalities into an android device is
+                                described and demonstrated in this paper.
+                            </p>
+                            <a class="bd-content-link" href="http://ieeexplore.ieee.org/document/7488124/">See Publication</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 19, 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Mongol Barota - A Next Generation Rover</h4>
+                            <p class="bd-content-subtitle">8th International Conference on Software, Knowledge, Information, Management and Application (SKIMA)</p>
+                            <p class="bd-content-description">
+                                This paper scrutinizes Mongol Barota - a fully functional, stand-alone mobile platform rover which is capable to act as a human assistant to perform various scientific tasks in extreme adversities. The control system of the rover is designed in such a
+                                way that it can be commanded from a blind station within 1 kilometer range. It has successfully taken part in 8th annual University Rover Challenge organized by the Mars Society at the Mars Desert Research Station (MDRS)
+                                in the remote, barren desert of southern Utah, USA in late May, 2014. It has been traced out as the first entrance in this competition from Bangladesh and occupied 12th position out of 31 registered teams from 6 countries
+                                of 4 continents. The rover architecture maps the associated components to make it capable to perform the assigned tasks namely - Sample Return Task, Astronaut Assistance Task, Equipment Servicing Task and Terrain Traversing
+                                Task. Among these, the first task refers to search for the evidence to identify the existence of life after detailed analysis of collected soil sample from a selected site. In Equipment servicing task, rover has to perform
+                                a sequence of operations that mainly includes switching on a compressor and working with a series of pipes, hoses, valves and other such equipment. Astronaut assistance task intends the rover to collect tools from some
+                                given GPS locations and then delivery of each of them to the corresponding locations with provided GPS coordinates. Rover has to traverse an adverse terrain in order to pass through a set of target gates for completion
+                                of the terrain traversing task. This paper provides a detailed demonstration of the Mongol Barota rover, ins and outs of its architecture, facts and features, system components, logic, logistics and techniques adopted to
+                                implement several tasks representing its overall capabilities.
+                            </p>
+                            <a class="bd-content-link" href="http://ieeexplore.ieee.org/document/7083564/">See Publication</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bd-section" id="awards">
+            <div class="bd-section-bg-left"></div>
+            <div class="bd-section-bg-right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br><br>
+                        <h2 class="bd-section-title">Honors &amp; Awards</h2>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">January 2016</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">MIST Dean's List 2015</h4>
+                            <p class="bd-content-subtitle">Military Institute of Science and Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">April 2015</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">MIST Commandant's List 2014</h4>
+                            <p class="bd-content-subtitle">Military Institute of Science and Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">March 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">MIST Dean's List 2013</h4>
+                            <p class="bd-content-subtitle">Military Institute of Science and Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">August 2011</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Dhaka Board Scholarship</h4>
+                            <p class="bd-content-subtitle">Board of Intermediate and Secondary Education, Dhaka</p>
+                            <p class="bd-content-description">
+                                For the result of HSC.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 2006</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Junior Board Scholarship</h4>
+                            <p class="bd-content-subtitle">Dhaka Education Board</p>
+                            <p class="bd-content-description">
+                                Talent-pool, Merit Position 16th
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 2003</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Primary Board Scholarship</h4>
+                            <p class="bd-content-subtitle">Dhaka Education Board</p>
+                            <p class="bd-content-description">
+                                Talent-pool, Merit position 3rd
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">November 2015</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Certificate of Achievement - The ACM ICPC Dhaka Site 2015</h4>
+                            <p class="bd-content-subtitle">ACM International Collegiate Programming Contest</p>
+                            <p class="bd-content-description">
+                                Secured 19th position. Team MIST_Endless_Code.
+                            </p>
+                            <a class="bd-content-link" href="https://icpc.baylor.edu/regionals/finder/dhaka-2015/standings">See Ranklist</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Certificate of Achievement - The ACM ICPC Dhaka Site 2014</h4>
+                            <p class="bd-content-subtitle">ACM International Collegiate Programming Contest</p>
+                            <p class="bd-content-description">
+                                Secured 11th position. Team MIST_ENDLESS_CODE.
+                            </p>
+                            <a class="bd-content-link" href="https://icpc.baylor.edu/regionals/finder/dhaka-2014/standings">See Ranklist</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">January 2016</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">MIST Best Project Award 2015 (Department of CSE)</h4>
+                            <p class="bd-content-subtitle">Military Institute of Science and Technology</p>
+                            <p class="bd-content-description">
+                                For the project named 'MIMO - An Intelligent Robot'
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">February 2015</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Champion in Project Showcasing - Mobile Application Development Course 2015</h4>
+                            <p class="bd-content-subtitle">Military Institute of Science and Technology</p>
+                            <p class="bd-content-description">
+                                Built android application named 'Lostpedia'.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">MIST Best Project 2014</h4>
+                            <p class="bd-content-subtitle">Military Institute of Science and Technology</p>
+                            <p class="bd-content-description">
+                                Project: Mongol Barota ( Building a next generation Mars Rover )<br> Mongol Barota is a project that builds a next generation mars rover to assist human in Mars. This project was built to compete in the international robotics
+                                competition - University Rover Challenge 2014 and achieved 12th position among the 31 teams all over the world. It was the first mars rover built in Bangladesh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">September 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Champion in Project Showcasing of DUITS ERICSSON NATIONAL CAMPUS IT FEST 2014</h4>
+                            <p class="bd-content-subtitle">Dhaka University IT Society</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">August 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">COMMANDANT'S COMMENDATION - THE MARS SOCIETY'S UNIVERSITY ROVER CHALLENGE (URC) 2014, USA</h4>
+                            <p class="bd-content-subtitle">Military Institute of Science and Technology</p>
+                            <p class="bd-content-description">
+                                Commandant's commendation for securing 11th place in URC 2014.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">May 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">University Rover Challenge 2014- Certificate of Participation</h4>
+                            <p class="bd-content-subtitle">The Mars Society</p>
+                            <p class="bd-content-description">
+                                Secured 11th place in URC 2014.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bd-section" id="experience">
+            <div class="bd-section-bg-left"></div>
+            <div class="bd-section-bg-right"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br><br>
+                        <h2 class="bd-section-title">Experience</h2>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">July 2015 - Present</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Software Engineer</h4>
+                            <p class="bd-content-subtitle">QI Analysis Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">January 2015 - December 2015</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">President</h4>
+                            <p class="bd-content-subtitle">MIST Computer Club</p>
+                            <p class="bd-content-description">
+                                Founding committee member of the computer club. Organized courses on contest programming and programming languages. Conducted courses on data structures and algorithms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">December 2014 - January 2015</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Internship</h4>
+                            <p class="bd-content-subtitle">Banglalink Digital Communications Ltd. , Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">January 2014 - December 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Assistant Secretary and Senior Instructor</h4>
+                            <p class="bd-content-subtitle">MIST Computer Club</p>
+                            <p class="bd-content-description">
+                                Taken courses on data structure and algorithm.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">November 2013 - July 2014</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Team Member</h4>
+                            <p class="bd-content-subtitle">MIST URC Team - Mongol Barota</p>
+                            <p class="bd-content-description">
+                                Worked as a member of the team Mongol Barota that participated in "University Rover Challenge 2014" arranged by The Mars Society at the Mars Desert Research Station (MDRS) in the remote, barren desert of southern Utah, USA in late May, 2014. It was the
+                                first team to participate from Bangladesh. The team scored 187 points in 5 different scientific tasks and achieved 12th position out of 31 registered teams.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">January 2013 - December 2013</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Co Founder and Junior Instructor</h4>
+                            <p class="bd-content-subtitle">MIST Computer Club</p>
+                            <p class="bd-content-description">
+                                Taken courses on C, C++ .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br><br>
+                        <h2 class="bd-section-title">Volunteer Experience</h2>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">August 2013 - September 2013</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Committee Member</h4>
+                            <p class="bd-content-subtitle">Google Developers Group Bangladesh</p>
+                            <p class="bd-content-description">
+                                Helped Google Developers Group to organize Google DEVFEST Dhaka 2014.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 bd-content-left wow fadeInLeft">
+                        <h4 class="bd-content-title">January 2013 - December 2013</h4>
+                    </div>
+                    <div class="col-md-8 bd-content-right">
+                        <div class="wow fadeInRight">
+                            <h4 class="bd-content-title">Head Volunteer (Publicity)</h4>
+                            <p class="bd-content-subtitle">MIST Computer Club</p>
+                            <p class="bd-content-description">
+                                Designed first ever banner and poster for MIST Computer Club. Worked to raise awareness about programming and club activities among students.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 bd-content-right">
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -128,10 +619,33 @@
             </ul>
         </section>
     </footer>
+
     <script>
         $(document).ready(function() {
-            new WOW().init();
-        })
+            new WOW({
+                mobile: false,
+            }).init();
+
+            $('#bd-navbar-affix').affix({
+                offset: {
+                    top: $('.bd-navbar').offset().top - 20,
+                    bottom: $('footer').outerHeight(true)
+                }
+            });
+
+            $(window).scroll(function(event) {
+                if ($(this).scrollTop() < 400) {
+                    $('.bd-navbar-nav .nav li:first-child').addClass('active');
+                }
+            });
+
+            $('.bd-navbar-nav .nav li a').click(function(event) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 1000);
+            });
+        });
     </script>
 </body>
 

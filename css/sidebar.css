@@ -49,14 +49,21 @@ body
     font-family: 'Lato', sans-serif;
     font-size: 15px;
 
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     height: 80px;
-    padding-top: 30px;
+    /*padding-top: 30px;*/
 
     transition: color .3s ease;
     text-align: center;
+}
 
+.bd-navbar-nav .nav > li a,
+.bd-navbar-nav .nav > li a:focus,
+.bd-navbar-nav .nav > li a:hover
+{
     color: white;
 }
 
@@ -67,7 +74,6 @@ body
     color: white;
     background: #b1aa9d;
 }
-
 
 .bd-navbar-nav .nav > li a:hover
 {

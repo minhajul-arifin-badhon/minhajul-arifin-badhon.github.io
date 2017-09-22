@@ -70,8 +70,9 @@
 {
     font-family: 'Martel';
     font-size: 16px;
+    line-height: 1.5em;
 
-    margin-bottom: 4px;
+    margin-bottom: 0;
     /* color: #43484d; */
     /* color: #434242; */
 
@@ -98,6 +99,11 @@
     /* color: #2d4a5b; */
 }
 
+.bd-content-left .bd-content-subtitle
+{
+    margin-bottom: 5px;
+}
+
 .bd-content-description
 {
     font-family: 'Roboto', sans-serif;
@@ -111,6 +117,27 @@
 
     color: #939393;
 }
+
+.bd-content-link
+{
+    font-family: 'Droid Sans';
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+    cursor: pointer;
+    transition: color .3s ease;
+
+    color: #0084bf;
+}
+
+.bd-content-link:hover
+{
+    text-decoration: none;
+
+    color: #05b3ef;
+}
+
 
 @media screen and (max-width: 1366px)
 {

@@ -69,7 +69,9 @@ body
 
 @media screen and (max-width: 767px)
 {
-    .bd-primary-nav-item
+    .bd-primary-nav-item,
+    .bd-primary-nav-item:focus,
+    .bd-primary-nav-item:active
     {
         display: block;
 
@@ -79,7 +81,9 @@ body
 
 @media screen and (max-width: 479px)
 {
-    .bd-primary-nav-item
+    .bd-primary-nav-item,
+    .bd-primary-nav-item:focus,
+    .bd-primary-nav-item:active
     {
         padding-top: 10px;
         padding-bottom: 10px;

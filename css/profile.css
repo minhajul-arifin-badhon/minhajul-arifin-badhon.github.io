@@ -173,6 +173,7 @@
 .bd-image-circle
 {
     border-radius: 50%;
+    margin: auto;
 }
 
 .bd-content-title
